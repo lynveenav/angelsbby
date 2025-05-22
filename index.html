@@ -1,0 +1,453 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Siargao Islands Travelers
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: "Montserrat", sans-serif;
+      background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);
+      min-height: 100vh;
+    }
+    main {
+      background-color: rgba(255, 255, 255, 0.95);
+      border-radius: 1rem;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      padding-top: 2rem;
+      padding-bottom: 3rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+    header,
+    footer {
+      background-color: #6b46c1; /* deeper purple */
+    }
+    nav a i {
+      min-width: 18px;
+      text-align: center;
+    }
+    .star {
+      color: #fbbf24; /* amber-400 */
+    }
+  </style>
+ </head>
+ <body class="flex flex-col min-h-screen">
+  <header class="text-white shadow-md sticky top-0 z-50">
+   <div class="container mx-auto px-4 py-4 flex flex-col md:flex-row md:items-center md:justify-between">
+    <h1 aria-label="Siargao Islands Travel logo and title" class="text-2xl font-semibold mb-2 md:mb-0 flex items-center select-none">
+     <img alt="Logo of Siargao Island with tropical waves and palm trees" class="mr-3 rounded-full w-10 h-10 object-cover" height="40" loading="lazy" src="image/cloud.jpg" width="40"/>
+     Siargao Islands Traveler
+    </h1>
+    <nav aria-label="Primary navigation" class="text-sm md:text-base flex flex-col md:flex-row md:items-center space-y-3 md:space-y-0 md:space-x-6" id="primaryNav">
+     <ul class="flex flex-col md:flex-row md:space-x-6 space-y-3 md:space-y-0 p-0 m-0 list-none">
+      <li>
+       <a class="flex items-center text-white hover:text-purple-300 font-semibold" href="index.html">
+        <i class="fas fa-home">
+        </i>
+        <span class="ml-3">
+         Home
+        </span>
+       </a>
+      </li>
+      <li>
+       <a class="flex items-center text-white hover:text-purple-300" href="municipality.html">
+        <i class="fas fa-map">
+        </i>
+        <span class="ml-3">
+         Municipality
+        </span>
+       </a>
+      </li>
+      <li>
+       <a class="flex items-center text-white hover:text-purple-300" href="bookings.html">
+        <i class="fas fa-calendar-alt">
+        </i>
+        <span class="ml-3">
+         Booking
+        </span>
+       </a>
+      </li>
+      <li>
+       <a class="flex items-center text-white hover:text-purple-300" href="settings.html">
+        <i class="fas fa-cogs">
+        </i>
+        <span class="ml-3">
+         Settings
+        </span>
+       </a>
+      </li>
+      <li class="md:ml-auto">
+       <a class="flex items-center text-red-600 hover:text-red-800 font-semibold" href="logout.html">
+        <i class="fas fa-sign-out-alt">
+        </i>
+        <span class="ml-3">
+         Logout
+        </span>
+       </a>
+      </li>
+     </ul>
+    </nav>
+   </div>
+  </header>
+  <main class="flex-grow container mx-auto px-4" id="Home">
+   <section class="text-center mb-12 px-4">
+    <h2 class="text-4xl font-extrabold text-purple-700 mb-4 drop-shadow-md">
+     Welcome to Siargao Islands Travel and Tours
+    </h2>
+    <p class="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
+     Discover the best destinations, activities, and experiences in the
+        beautiful Siargao Islands. Plan your perfect tropical getaway with us.
+    </p>
+   </section>
+   <section class="mb-12" id="destinations">
+    <h3 class="text-3xl font-semibold text-purple-700 mb-6 text-center drop-shadow-sm">
+     Popular Destinations
+    </h3>
+    <div aria-label="Popular destinations in Siargao Islands" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8" id="destinationsList" role="list">
+     <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1" tabindex="0">
+      <img alt="Cloud 9 Surf Spot with surfers riding waves at sunset" class="w-full h-48 object-cover" height="400" loading="lazy" src="image/cloud.jpg" width="600"/>
+      <div class="p-4">
+       <h4 class="text-xl font-semibold mb-1 text-purple-800">
+        Cloud 9 Surf Spot
+       </h4>
+       <div aria-label="Rating: 4.8 out of 5 stars" class="flex items-center mb-2" role="img">
+        <span class="star">
+         <i class="fas fa-star">
+         </i>
+        </span>
+        <span class="star">
+         <i class="fas fa-star">
+         </i>
+        </span>
+        <span class="star">
+         <i class="fas fa-star">
+         </i>
+        </span>
+        <span class="star">
+         <i class="fas fa-star">
+         </i>
+        </span>
+        <span class="star">
+         <i class="fas fa-star-half-alt">
+         </i>
+        </span>
+        <span class="ml-2 text-sm text-gray-600 font-medium">
+         4.8 (1,245 reviews)
+        </span>
+       </div>
+       <p class="text-gray-600 text-sm">
+        Famous for its powerful waves, Cloud 9 is a must-visit for surfers
+              and beach lovers.
+       </p>
+      </div>
+     </article>
+     <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1" tabindex="0">
+      <img alt="Magpupungko Rock Pools with crystal clear water and natural rock formations" class="w-full h-48 object-cover" height="400" loading="lazy" src="./image/pupungko.jpg" width="600"/>
+      <div class="p-4">
+       <h4 class="text-xl font-semibold mb-1 text-purple-800">
+        Magpupungko Rock Pools
+       </h4>
+       <div aria-label="Rating: 4.6 out of 5 stars" class="flex items-center mb-2" role="img">
+        <span class="star">
+         <i class="fas fa-star">
+         </i>
+        </span>
+        <span class="star">
+         <i class="fas fa-star">
+         </i>
+        </span>
+        <span class="star">
+         <i class="fas fa-star">
+         </i>
+        </span>
+        <span class="star">
+         <i class="fas fa-star">
+         </i>
+        </span>
+        <span class="star">
+         <i class="fas fa-star-half-alt">
+         </i>
+        </span>
+        <span class="ml-2 text-sm text-gray-600 font-medium">
+         4.6 (987 reviews)
+        </span>
+       </div>
+       <p class="text-gray-600 text-sm">
+        Natural tidal pools perfect for swimming and snorkeling during low
+              tide.
+       </p>
+      </div>
+     </article>
+     <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1" tabindex="0">
+      <img alt="Guyam Island with white sandy beach and palm trees under a blue sky" class="w-full h-48 object-cover" height="400" loading="lazy" src="image/guyam.jpg" width="600"/>
+      <div class="p-4">
+       <h4 class="text-xl font-semibold mb-1 text-purple-800">
+        Guyam Island
+       </h4>
+       <div aria-label="Rating: 4.4 out of 5 stars" class="flex items-center mb-2" role="img">
+        <span class="star">
+         <i class="fas fa-star">
+         </i>
+        </span>
+        <span class="star">
+         <i class="fas fa-star">
+         </i>
+        </span>
+        <span class="star">
+         <i class="fas fa-star">
+         </i>
+        </span>
+        <span class="star">
+         <i class="fas fa-star">
+         </i>
+        </span>
+        <span class="star text-gray-300">
+         <i class="fas fa-star">
+         </i>
+        </span>
+        <span class="ml-2 text-sm text-gray-600 font-medium">
+         4.4 (765 reviews)
+        </span>
+       </div>
+       <p class="text-gray-600 text-sm">
+        A small, picturesque island ideal for relaxing, snorkeling, and
+              picnics.
+       </p>
+      </div>
+     </article>
+     <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1" tabindex="0">
+      <img alt="Daku Island with white sand beach and traditional boats anchored near shore" class="w-full h-48 object-cover" height="400" loading="lazy" src="./image/daku.jpg" width="600"/>
+      <div class="p-4">
+       <h4 class="text-xl font-semibold mb-1 text-purple-800">
+        Daku Island
+       </h4>
+       <div aria-label="Rating: 4.5 out of 5 stars" class="flex items-center mb-2" role="img">
+        <span class="star">
+         <i class="fas fa-star">
+         </i>
+        </span>
+        <span class="star">
+         <i class="fas fa-star">
+         </i>
+        </span>
+        <span class="star">
+         <i class="fas fa-star">
+         </i>
+        </span>
+        <span class="star">
+         <i class="fas fa-star">
+         </i>
+        </span>
+        <span class="star text-gray-300">
+         <i class="fas fa-star">
+         </i>
+        </span>
+        <span class="ml-2 text-sm text-gray-600 font-medium">
+         4.5 (832 reviews)
+        </span>
+       </div>
+       <p class="text-gray-600 text-sm">
+        The largest of the three islands, known for its beautiful beach and
+              local seafood.
+       </p>
+      </div>
+     </article>
+     <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1" tabindex="0">
+      <img alt="Siargao Island Mangrove Forest with kayakers paddling through calm waters" class="w-full h-48 object-cover" height="400" loading="lazy" src="image/mangrove.jpg" width="600"/>
+      <div class="p-4">
+       <h4 class="text-xl font-semibold mb-1 text-purple-800">
+        Mangrove Forest
+       </h4>
+       <div aria-label="Rating: 4.3 out of 5 stars" class="flex items-center mb-2" role="img">
+        <span class="star">
+         <i class="fas fa-star">
+         </i>
+        </span>
+        <span class="star">
+         <i class="fas fa-star">
+         </i>
+        </span>
+        <span class="star">
+         <i class="fas fa-star">
+         </i>
+        </span>
+        <span class="star text-gray-300">
+         <i class="fas fa-star">
+         </i>
+        </span>
+        <span class="star text-gray-300">
+         <i class="fas fa-star">
+         </i>
+        </span>
+        <span class="ml-2 text-sm text-gray-600 font-medium">
+         4.3 (654 reviews)
+        </span>
+       </div>
+       <p class="text-gray-600 text-sm">
+        Explore the lush mangrove forest by kayak and enjoy the serene
+              nature.
+       </p>
+      </div>
+     </article>
+     <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1" tabindex="0">
+      <img alt="Siargao Island Waterfalls surrounded by lush green tropical forest" class="w-full h-48 object-cover" height="400" loading="lazy" src="image/taktak.jpg" width="600"/>
+      <div class="p-4">
+       <h4 class="text-xl font-semibold mb-1 text-purple-800">
+        Taktak Falls
+       </h4>
+       <div aria-label="Rating: 4.7 out of 5 stars" class="flex items-center mb-2" role="img">
+        <span class="star">
+         <i class="fas fa-star">
+         </i>
+        </span>
+        <span class="star">
+         <i class="fas fa-star">
+         </i>
+        </span>
+        <span class="star">
+         <i class="fas fa-star">
+         </i>
+        </span>
+        <span class="star">
+         <i class="fas fa-star">
+         </i>
+        </span>
+        <span class="star">
+         <i class="fas fa-star-half-alt">
+         </i>
+        </span>
+        <span class="ml-2 text-sm text-gray-600 font-medium">
+         4.7 (912 reviews)
+        </span>
+       </div>
+       <p class="text-gray-600 text-sm">
+        A hidden gem featuring a cave and natural pool perfect for swimming
+              and adventure.
+       </p>
+      </div>
+     </article>
+    </div>
+   </section>
+  </main>
+  <footer class="text-white py-6 mt-auto">
+   <div class="container mx-auto px-4 text-center text-sm select-none">
+    © 2024 Siargao Islands Travel. All rights reserved.
+   </div>
+  </footer>
+  <script>
+   // Enable smooth scrolling for navigation links
+    document.querySelectorAll('nav a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        const targetID = this.getAttribute("href").substring(1);
+        const targetElement = document.getElementById(targetID);
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: "smooth" });
+        }
+      });
+    });
+
+    // Form validation and enable/disable submit button
+    const form = document.getElementById("preferencesForm");
+    if (form) {
+      const saveBtn = document.getElementById("saveBtn");
+      const destinationSelect = document.getElementById("preferredDestination");
+      const monthSelect = document.getElementById("travelMonth");
+      const activitiesGroup = document.getElementById("activitiesGroup");
+      const budgetInput = document.getElementById("budget");
+
+      const destinationError = document.getElementById("destinationError");
+      const monthError = document.getElementById("monthError");
+      const activitiesError = document.getElementById("activitiesError");
+      const budgetError = document.getElementById("budgetError");
+
+      function validateForm() {
+        let valid = true;
+
+        // Validate destination
+        if (!destinationSelect.value) {
+          destinationError.classList.remove("hidden");
+          valid = false;
+        } else {
+          destinationError.classList.add("hidden");
+        }
+
+        // Validate month
+        if (!monthSelect.value) {
+          monthError.classList.remove("hidden");
+          valid = false;
+        } else {
+          monthError.classList.add("hidden");
+        }
+
+        // Validate activities (at least one checked)
+        const checkedActivities = activitiesGroup.querySelectorAll(
+          'input[type="checkbox"]:checked'
+        );
+        if (checkedActivities.length === 0) {
+          activitiesError.classList.remove("hidden");
+          valid = false;
+        } else {
+          activitiesError.classList.add("hidden");
+        }
+
+        // Validate budget (number and >= 100)
+        const budgetValue = parseFloat(budgetInput.value);
+        if (isNaN(budgetValue) || budgetValue < 100) {
+          budgetError.classList.remove("hidden");
+          valid = false;
+        } else {
+          budgetError.classList.add("hidden");
+        }
+
+        saveBtn.disabled = !valid;
+        return valid;
+      }
+
+      // Attach input/change event listeners to validate form on user input
+      destinationSelect.addEventListener("change", validateForm);
+      monthSelect.addEventListener("change", validateForm);
+      activitiesGroup.querySelectorAll('input[type="checkbox"]').forEach((checkbox) => {
+        checkbox.addEventListener("change", validateForm);
+      });
+      budgetInput.addEventListener("input", validateForm);
+
+      // Initial validation on page load
+      validateForm();
+
+      // Handle form submission
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        if (!validateForm()) return;
+
+        // Gather form data
+        const selectedDestination = destinationSelect.value;
+        const selectedMonth = monthSelect.value;
+        const selectedActivities = Array.from(
+          activitiesGroup.querySelectorAll('input[type="checkbox"]:checked')
+        ).map((cb) => cb.value);
+        const budget = budgetInput.value;
+
+        // Show a confirmation alert with the preferences
+        alert(
+          `Preferences saved!\n\n` +
+            `Destination: ${selectedDestination}\n` +
+            `Travel Month: ${selectedMonth}\n` +
+            `Activities: ${selectedActivities.join(", ")}\n` +
+            `Budget: $${budget}`
+        );
+
+        // Optionally reset form or keep values
+        // form.reset();
+        // validateForm();
+      });
+    }
+  </script>
+ </body>
+</html>
