@@ -1,0 +1,245 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image and Description</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+        
+        /* General Body Style */
+        body {
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            background-color: #fff; /* Plain white background */
+            color: #333; /* Dark gray text color for readability */
+            margin: 0;
+            padding: 20px;
+            position: relative;
+        }
+
+        /* Background Image */
+        .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            filter: blur(5px); /* Blur effect */
+            opacity: 0.2; /* Slight transparency */
+        }
+
+        /* Page Title Style */
+        h1, h2 {
+            color: #333; /* Dark gray for heading text */
+            font-weight: 600;
+        }
+
+        /* Container for content */
+        .content {
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+            background-color: #fff; /* White background */
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            position: relative;
+            max-width: 750px; /* Adjust width to fit content */
+            margin: auto;
+            overflow: hidden;
+            border-radius: 10px; /* Rounded corners for the slideshow */
+            background-color: #fff; /* Ensure background is white */
+        }
+
+        /* Individual slide style */
+        .slides {
+            display: none;
+            width: 100%;
+        }
+
+        /* Image Style */
+        img {
+            width: 100%;
+            border-radius: 10px; /* Rounded corners for images */
+        }
+
+        /* Navigation buttons (Prev and Next) */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 10px;
+            margin-top: -22px;
+            color: #333; /* Dark color for navigation buttons */
+            font-weight: bold;
+            font-size: 22px;
+            transition: 0.6s ease;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.7); /* White background with slight transparency */
+            user-select: none;
+        }
+
+        .next {
+            right: 10px;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(255, 255, 255, 0.9); /* Lighter on hover */
+        }
+
+        /* Dot navigation style */
+        .dots-container {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .dot {
+            cursor: pointer;
+            height: 12px;
+            width: 12px;
+            margin: 5px;
+            background-color: #bbb; /* Light gray for inactive dots */
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active, .dot:hover {
+            background-color: #333; /* Dark gray when active or hovered */
+        }
+
+        /* Description text */
+        .description {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #555; /* Slightly lighter gray for description text */
+        }
+
+        /* Button style for home link */
+        .home-button {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .home-button a {
+            text-decoration: none;
+            background-color: #009988; /* Teal color for the button */
+            color: whitesmoke;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background 0.3s ease, transform 0.3s;
+            display: inline-block;
+        }
+
+        .home-button a:hover {
+            background-color: #006b66; /* Darker teal on hover */
+            transform: scale(1.1);
+            box-shadow: 0 0 15px rgba(0, 255, 204, 0.7); /* Glow effect on hover */
+        }
+    </style>
+</head>
+<body>
+    <!-- Background Image -->
+    <img src="./image/background.jpg" alt="Background Image of Siargao Island" class="background-image">
+
+    <div class="content">
+        <h1 id="page-title">Welcome to Siargao Island Destinations!</h1>
+        <p id="page-content">Have Fun to Explore.</p>
+    </div>
+    
+    <h2>Popular Destinations in Siargao</h2>
+    <div class="slideshow-container">
+        <div class="slides">
+            <img src="./image/Cloud-9-Siargao-.jpg" alt="Cloud 9">
+            <p class="description">Cloud 9 - Famous for its world-class surf breaks.</p>
+        </div>
+        <div class="slides">
+            <img src="./image/soc.jpg" alt="Sugba Lagoon">
+            <p class="description">Sugba Lagoon - A stunning emerald-green lagoon perfect for kayaking and swimming.</p>
+        </div>
+        <div class="slides">
+            <img src="./image/pilar.jpg" alt="Magpupungko Rock Pools">
+            <p class="description">Magpupungko Rock Pools - Natural tide pools with crystal-clear waters.</p>
+        </div>
+        <div class="slides">
+            <img src="./image/guyam.jpg" alt="Guyam Island">
+            <p class="description">Guyam Island is a tiny island covered in palms.</p>
+        </div>
+        <div class="slides">
+            <img src="./image/daku.jpg" alt="Daku Island">
+            <p class="description">Daku Island is the biggest island of the tour and a great place for a swim and lunch.</p>
+        </div>
+        <div class="slides">
+            <img src="./image/naked.jpg" alt="Naked Island">
+            <p class="description">Naked Island is a small sandbar, which earned its name by literally just being sand.</p>
+        </div>
+        <div class="slides">
+            <img src="./image/Tayangba.jpg" alt="Tayangban Cave Pool">
+            <p class="description">Tayangban Cave Pool was one of the highlights of my many adventures throughout Siargao Island.</p>
+        </div>
+        <div class="slides">
+            <img src="image/taktak.jpg" alt="Tak Tak Falls">
+            <p class="description">Tak Tak Falls is the only waterfall on Siargao Island, located in the province of Surigao del Norte in the Philippines.</p>
+        </div>
+        <div class="slides">
+            <img src="./image/alegria.jpg" alt="Alegria Beach">
+            <p class="description">Alegria Beach The first thing I noticed at Alegria Beach on Siargao was the white sand and crystal clear water.</p>
+        </div>
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    </div>
+    <div class="dots-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
+        <span class="dot" onclick="currentSlide(9)"></span>
+    </div>
+    
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function changeSlide(n) {
+            showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+            let slides = document.getElementsByClassName("slides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1; }
+            if (n < 1) { slideIndex = slides.length; }
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (let i = 0; i < dots.length; i++) {
+                dots[i].classList.remove("active");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].classList.add("active");
+        }
+    </script>
+    
+    <div class="home-button">
+        <a href="index.html">Go Back Home</a>
+    </div>
+</body>
+</html>
